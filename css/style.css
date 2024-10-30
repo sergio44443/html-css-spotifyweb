@@ -88,6 +88,7 @@ a {
 /* Typography */
 body {
   font-family: "Montserrat", sans-serif;
+ 
 }
 
 .text-xsmall {
@@ -242,6 +243,10 @@ body {
   background-color: var(--content-section-bg);
 }
 
+.main-section::-webkit-scrollbar {
+  display: none;
+}
+
 .categories ul {
   flex-wrap: wrap;
   gap: 20px;
@@ -260,7 +265,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: ;
   gap: 5px;
 }
 
@@ -293,7 +297,7 @@ body {
 
 .popular-artists .play-hover {
   border-radius: 50%;
-  height: 137px;
+  height: 177px;
 }
 
 .created-for h2,
@@ -437,4 +441,21 @@ body {
   background-color: greenyellow;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #141922; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #141922; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #141922; 
+}
