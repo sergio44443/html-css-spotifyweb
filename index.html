@@ -1,249 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet" />
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'
-    integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=='
-    crossorigin='anonymous'>
-  <title>Spotify</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+    <!-- Font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
+
 <body>
     <!-- Wrapper -->
     <main class="wrapper">
-      <!-- Top Block -->
-      <section class="top-block flex">
-          <!-- Side Bar -->
-          <nav class="side-bar flex justify-between">
-              <!-- Top Nav -->
-              <ul class="nav-list">
-                  <li>
-                      <a href="">
-                          <img src="./img/logo.svg" alt="Logo Spotify" class="logo pb-10">
-                      </a>
-                      <a href="">
-                          <img src="./img/logo-small.svg" alt="Icon Spotify" class="logo-icon">
-                      </a>
-                  </li>
-                  <li class="pt-15">
-                      <a href="">
-                          <img class="icon" src="./img/home.svg" alt="Home Icon">
-                          <span class="text-small home">Home</span>
-                      </a>
-                  </li>
-                  <li class="pt-10 white-text-hover">
-                      <a href="">
-                          <img class="icon" src="./img/search.svg" alt="Search Icon">
-                          <span class="text-small text-gray">Cerca</span>
-                      </a>
-                  </li>
-                  <li class="pt-10 pb-20 white-text-hover">
-                      <a href="">
-                          <img class="icon" src="./img/libreria.svg" alt="Libray Icon">
-                          <span class="text-small text-gray">La tua libreria</span>
-                      </a>
-                  </li>
-                  <li class="playlist">
-                      <span class="text-regular">PLAYLIST</span>
-                      <ul class="list-items">
-                          <li class="pt-10 add-btn-hover">
-                              <a href="">
-                                  <span class="add-btn">+</span>
-                                  <span class="text-regular text-gray text-btn">Crea Playlist</span>
-                              </a>
-                          </li>
-                          <li class="pt-10 white-text-hover">
-                              <a class="text-small text-gray" href="">Nome Playlist</a>
-                          </li>
-                          <li class="pt-15 white-text-hover">
-                              <a class="text-small text-gray" href="">Nome Playlist</a>
-                          </li>
-                          <li class="pt-15 white-text-hover">
-                              <a class="text-small text-gray" href="">Nome Playlist</a>
-                          </li>
-                          <li class="pt-15 white-text-hover">
-                              <a class="text-small text-gray" href="">Nome Playlist</a>
-                          </li>
-                          <li class="pt-15 white-text-hover">
-                              <a class="text-small text-gray" href="">Nome Playlist</a>
-                          </li>
-                          <li class="pt-15 white-text-hover">
-                              <a class="text-small text-gray" href="">Nome Playlist</a>
-                          </li>
-                          <li class="pt-15 white-text-hover">
-                              <a class="text-small text-gray" href="">Nome Playlist</a>
-                          </li>
-                      </ul>
-                  </li>
-              </ul>
-              <!-- Top Nav -->
-               
+        <!-- Top Block -->
+        <section class="top-block flex">
+            <!-- Side Bar -->
+            <nav class="side-bar flex justify-between">
+                <!-- Top Nav -->
+                <ul class="nav-list">
+                    <li>
+                        <a href="">
+                            <img src="./img/logo.svg" alt="Logo Spotify" class="logo pb-10">
+                        </a>
+                        <a href="">
+                            <img src="./img/logo-small.svg" alt="Icon Spotify" class="logo-icon">
+                        </a>
+                    </li>
+                    <li class="pt-15">
+                        <a href="">
+                            <img class="icon" src="./img/home.svg" alt="Home Icon">
+                            <span class="text-small home">Home</span>
+                        </a>
+                    </li>
+                    <li class="pt-10 white-text-hover">
+                        <a href="">
+                            <img class="icon" src="./img/search.svg" alt="Search Icon">
+                            <span class="text-small text-gray">Cerca</span>
+                        </a>
+                    </li>
+                    <li class="pt-10 pb-20 white-text-hover">
+                        <a href="">
+                            <img class="icon" src="./img/libreria.svg" alt="Libray Icon">
+                            <span class="text-small text-gray">La tua libreria</span>
+                        </a>
+                    </li>
+                    <li class="playlist">
+                        <span class="text-regular">PLAYLIST</span>
+                        <ul class="list-items">
+                            <li class="pt-10 add-btn-hover">
+                                <a href="">
+                                    <span class="add-btn">+</span>
+                                    <span class="text-regular text-gray text-btn">Crea Playlist</span>
+                                </a>
+                            </li>
+                            <li class="pt-10 white-text-hover">
+                                <a class="text-small text-gray" href="">Nome Playlist</a>
+                            </li>
+                            <li class="pt-15 white-text-hover">
+                                <a class="text-small text-gray" href="">Nome Playlist</a>
+                            </li>
+                            <li class="pt-15 white-text-hover">
+                                <a class="text-small text-gray" href="">Nome Playlist</a>
+                            </li>
+                            <li class="pt-15 white-text-hover">
+                                <a class="text-small text-gray" href="">Nome Playlist</a>
+                            </li>
+                            <li class="pt-15 white-text-hover">
+                                <a class="text-small text-gray" href="">Nome Playlist</a>
+                            </li>
+                            <li class="pt-15 white-text-hover">
+                                <a class="text-small text-gray" href="">Nome Playlist</a>
+                            </li>
+                            <li class="pt-15 white-text-hover">
+                                <a class="text-small text-gray" href="">Nome Playlist</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Top Nav -->
+
                 <!-- Bottom Nav -->
                 <div class="bottom-nav pt-15">
-                  <div class="download flex align-center justify-center white-text-hover">
-                      <img src="./img/download.svg" alt="Download Icon">
-                      <span class="text-small text-gray">Installa app</span>
-                  </div>
-                  <hr>
-                  <div class="profile flex align-center justify-center">
-                      <img src="./img/profile.svg" alt="Profile Icon">
-                      <span class="text-regular">John Doe</span>
-                  </div>
-              </div>
-              <!-- /Bottom Nav -->
-          </nav>
-          <!-- /Side Bar -->
-           
+                    <div class="download flex align-center justify-center white-text-hover">
+                        <img src="./img/download.svg" alt="Download Icon">
+                        <span class="text-small text-gray">Installa app</span>
+                    </div>
+                    <hr>
+                    <div class="profile flex align-center justify-center">
+                        <img src="./img/profile.svg" alt="Profile Icon">
+                        <span class="text-regular">John Doe</span>
+                    </div>
+                </div>
+                <!-- /Bottom Nav -->
+            </nav>
+            <!-- /Side Bar -->
+
             <!-- Main Section -->
             <section class="main-section">
-              <!-- Upgrade Bar -->
-              <div class="upgrade-bar flex align-center">
-                  <span class="upgrade-btn text-small">EFFETTUA L'UPGRADE</span>
-              </div>
-              <!-- /Upgrade Bar -->
+                <!-- Upgrade Bar -->
+                <div class="upgrade-bar flex align-center">
+                    <span class="upgrade-btn text-small">EFFETTUA L'UPGRADE</span>
+                </div>
+                <!-- /Upgrade Bar -->
 
-              <!-- Content Section -->
-              <div class="content-section">
-                  <!-- Categories -->
-                  <nav class="categories pb-20">
-                      <ul class="text-small text-gray flex justify-center">
-                          <li class="white-text-hover">
-                              <a class="selected" href="">IN EVIDENZA</a>
-                          </li>
-                          <li class="white-text-hover">
-                              <a href="">PODCAST</a>
-                          </li>
-                          <li class="white-text-hover">
-                              <a href="">CLASSIFICHE</a>
-                          </li>
-                          <li class="white-text-hover">
-                              <a href="">GENERI E MOOD</a>
-                          </li>
-                          <li class="white-text-hover">
-                              <a href="">NUOVE USCITE</a>
-                          </li>
-                          <li class="white-text-hover">
-                              <a href="">SCOPRI</a>
-                          </li>
-                      </ul>
-                  </nav>
-                  <!-- /Categories -->
+                <!-- Content Section -->
+                <div class="content-section">
+                    <!-- Categories -->
+                    <nav class="categories pb-20">
+                        <ul class="text-small text-gray flex justify-center">
+                            <li class="white-text-hover">
+                                <a class="selected" href="">IN EVIDENZA</a>
+                            </li>
+                            <li class="white-text-hover">
+                                <a href="">PODCAST</a>
+                            </li>
+                            <li class="white-text-hover">
+                                <a href="">CLASSIFICHE</a>
+                            </li>
+                            <li class="white-text-hover">
+                                <a href="">GENERI E MOOD</a>
+                            </li>
+                            <li class="white-text-hover">
+                                <a href="">NUOVE USCITE</a>
+                            </li>
+                            <li class="white-text-hover">
+                                <a href="">SCOPRI</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- /Categories -->
 
-                  <!-- Recently Played -->
-                  <section class="recently-played pb-20">
-                      <h2 class="text-big pb-20">Recently Played</h2>
-                      <div class="row">
-                          <div class="col">
-                              <div class="cover">
-                                  <img src="./img/metal_lifting.jpg" alt="Heavy Metal Album Cover">
-                                  <i class="fa-regular fa-circle-play play-hover"></i>
-                              </div>
-                              <span class="text-regular pt-10">Heavy Metal</span>
-                              <span class="text-xsmall text-gray">Subtitle</span>
-                          </div>
-                          <div class="col">
-                              <div class="cover">
-                                  <img src="./img/stranger.jpeg" alt="Stranger Things Album Cover">
-                                  <i class="fa-regular fa-circle-play play-hover"></i>
-                              </div>
-                              <span class="text-regular pt-10">Stranger Things, Vol. 1 (a Netflix Original Series
-                                  Soundtrack)
-                              </span>
-                              <span class="text-xsmall text-gray">Kyle Dixon & Michael Stein</span>
-                          </div>
-                          <div class="col">
-                              <div class="cover">
-                                  <img src="./img/aquietplace.jpeg" alt="A Quite Place Album Cover">
-                                  <i class="fa-regular fa-circle-play play-hover"></i>
-                              </div>
-                              <span class="text-regular pt-10">A Quite Place</span>
-                              <span class="text-xsmall text-gray">Subtitle</span>
-                          </div>
-                          <div class="col">
-                              <div class="cover">
-                                  <img src="./img/split.jpeg" alt="Split Album Cover">
-                                  <i class="fa-regular fa-circle-play play-hover"></i>
-                              </div>
-                              <span class="text-regular pt-10">Split</span>
-                              <span class="text-xsmall text-gray">Subtitle</span>
-                          </div>
-                          <div class="col">
-                              <div class="cover">
-                                  <img src="./img/cure.jpeg" alt="A cure for wellness Album Cover">
-                                  <i class="fa-regular fa-circle-play play-hover"></i>
-                              </div>
-                              <span class="text-regular pt-10">A cure for wellness</span>
-                              <span class="text-xsmall text-gray">Subtitle</span>
-                          </div>
-                          <div class="col">
-                              <div class="cover">
-                                  <img src="./img/sinister.jpeg" alt="Sinister Album Cover">
-                                  <i class="fa-regular fa-circle-play play-hover"></i>
-                              </div>
-                              <span class="text-regular pt-10">Sinister</span>
-                              <span class="text-xsmall text-gray">Subtitle</span>
-                          </div>
-                      </div>
-                  </section>
-                  <!-- /Recently Played -->
-                                      <!-- Created for -->
-                                      <section class="created-for pb-20">
-                                        <h2 class="text-big">Creato per John Doe</h2>
-                                        <p class="text-xsmall text-gray pb-20">Più ascolti, più accurati saranno i suggerimenti.</p>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="cover">
-                                                    <img src="./img/radar.jpeg" alt="Radar Album Cover">
-                                                    <i class="fa-regular fa-circle-play play-hover"></i>
-                                                </div>
-                                                <span class="text-regular pt-10">Release Radar</span>
-                                            </div>
-                                            <div class="col">
-                                                <div class="cover">
-                                                    <img src="./img/mixdaily.jpeg" alt="Daily Mix Cover">
-                                                    <i class="fa-regular fa-circle-play play-hover"></i>
-                                                </div>
-                                                <span class="text-regular pt-10">Daily Mix 1</span>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    <!-- /Created for -->
-                
-                                    <!-- Popular Artists -->
-                                    <section class="popular-artists pb-20">
-                                        <h2 class="text-big">Artisti più popolari</h2>
-                                        <p class="text-xsmall text-gray pb-20">Più ascolti, più accurati saranno i suggerimenti.</p>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="cover">
-                                                    <img class="br-50" src="./img/youg.jpeg" alt="Young and Beautiful Album Cover">
-                                                    <i class="fa-regular fa-circle-play play-hover"></i>
-                                                </div>
-                                                <span class="text-regular pt-10">Lana del Rey</span>
-                                            </div>
-                                            <div class="col">
-                                                <div class="cover">
-                                                    <img class="br-50" src="./img/einaudi.jpeg" alt="Einaudi Cover">
-                                                    <i class="fa-regular fa-circle-play play-hover"></i>
-                                                </div>
-                                                <span class="text-regular pt-10">Einaudi</span>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    <!-- /Popular Artists -->
+                    <!-- Recently Played -->
+                    <section class="recently-played pb-20">
+                        <h2 class="text-big pb-20">Recently Played</h2>
+                        <div class="row">
+                            <div class="col">
+                                <div class="cover">
+                                    <img src="./img/metal_lifting.jpg" alt="Heavy Metal Album Cover">
+                                    <i class="fa-regular fa-circle-play play-hover"></i>
                                 </div>
-                                <!-- /Content Section -->
-                            </section>
-                            <!-- Main Section -->
-                        </section>
-                        <!-- /Top Block -->
-    </div>
-    <div></div>
-    <div></div>
-  
+                                <span class="text-regular pt-10">Heavy Metal</span>
+                                <span class="text-xsmall text-gray">Subtitle</span>
+                            </div>
+                            <div class="col">
+                                <div class="cover">
+                                    <img src="./img/stranger.jpeg" alt="Stranger Things Album Cover">
+                                    <i class="fa-regular fa-circle-play play-hover"></i>
+                                </div>
+                                <span class="text-regular pt-10">Stranger Things, Vol. 1 (a Netflix Original Series
+                                    Soundtrack)
+                                </span>
+                                <span class="text-xsmall text-gray">Kyle Dixon & Michael Stein</span>
+                            </div>
+                            <div class="col">
+                                <div class="cover">
+                                    <img src="./img/aquietplace.jpeg" alt="A Quite Place Album Cover">
+                                    <i class="fa-regular fa-circle-play play-hover"></i>
+                                </div>
+                                <span class="text-regular pt-10">A Quite Place</span>
+                                <span class="text-xsmall text-gray">Subtitle</span>
+                            </div>
+                            <div class="col">
+                                <div class="cover">
+                                    <img src="./img/split.jpeg" alt="Split Album Cover">
+                                    <i class="fa-regular fa-circle-play play-hover"></i>
+                                </div>
+                                <span class="text-regular pt-10">Split</span>
+                                <span class="text-xsmall text-gray">Subtitle</span>
+                            </div>
+                            <div class="col">
+                                <div class="cover">
+                                    <img src="./img/cure.jpeg" alt="A cure for wellness Album Cover">
+                                    <i class="fa-regular fa-circle-play play-hover"></i>
+                                </div>
+                                <span class="text-regular pt-10">A cure for wellness</span>
+                                <span class="text-xsmall text-gray">Subtitle</span>
+                            </div>
+                            <div class="col">
+                                <div class="cover">
+                                    <img src="./img/sinister.jpeg" alt="Sinister Album Cover">
+                                    <i class="fa-regular fa-circle-play play-hover"></i>
+                                </div>
+                                <span class="text-regular pt-10">Sinister</span>
+                                <span class="text-xsmall text-gray">Subtitle</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /Recently Played -->
+
+                    <!-- Created for -->
+                    <section class="created-for pb-20">
+                        <h2 class="text-big">Creato per John Doe</h2>
+                        <p class="text-xsmall text-gray pb-20">Più ascolti, più accurati saranno i suggerimenti.</p>
+                        <div class="row">
+                            <div class="col">
+                                <div class="cover">
+                                    <img src="./img/radar.jpeg" alt="Radar Album Cover">
+                                    <i class="fa-regular fa-circle-play play-hover"></i>
+                                </div>
+                                <span class="text-regular pt-10">Release Radar</span>
+                            </div>
+                            <div class="col">
+                                <div class="cover">
+                                    <img src="./img/mixdaily.jpeg" alt="Daily Mix Cover">
+                                    <i class="fa-regular fa-circle-play play-hover"></i>
+                                </div>
+                                <span class="text-regular pt-10">Daily Mix 1</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /Created for -->
+
+                    <!-- Popular Artists -->
+                    <section class="popular-artists pb-20">
+                        <h2 class="text-big">Artisti più popolari</h2>
+                        <p class="text-xsmall text-gray pb-20">Più ascolti, più accurati saranno i suggerimenti.</p>
+                        <div class="row">
+                            <div class="col">
+                                <div class="cover">
+                                    <img class="br-50" src="./img/youg.jpeg" alt="Young and Beautiful Album Cover">
+                                    <i class="fa-regular fa-circle-play play-hover"></i>
+                                </div>
+                                <span class="text-regular pt-10">Lana del Rey</span>
+                            </div>
+                            <div class="col">
+                                <div class="cover">
+                                    <img class="br-50" src="./img/einaudi.jpeg" alt="Einaudi Cover">
+                                    <i class="fa-regular fa-circle-play play-hover"></i>
+                                </div>
+                                <span class="text-regular pt-10">Einaudi</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /Popular Artists -->
+                </div>
+                <!-- /Content Section -->
+            </section>
+            <!-- Main Section -->
+        </section>
+        <!-- /Top Block -->
+
+        <!-- Bottom Block -->
+        <section class="bottom-block flex justify-between align-center">
+            <div class="song-playing flex align-center">
+                <img src="./img/sinister.jpeg" alt="Sinister Album Cover">
+                <div class="title">
+                    <h5 class="text-xsmall">Sinister</h5>
+                    <span class="text-xsmall text-gray">Brano Nome</span>
+                </div>
+                <div class="icons">
+                    <i class="fa-regular fa-heart white-text-hover"></i>
+                    <i class="fa-regular fa-folder white-text-hover"></i>
+                </div>
+            </div>
+            <div class="command-bar flex">
+                <div class="commands flex align-center justify-center">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="timeline flex align-center">
+                    <span class="text-xsmall">0:25 </span>
+                    <div class="timeline-large">
+                        <div class="timeline-small"></div>
+                        <div class="timeline-circle br-50"></div>
+                    </div>
+                    <span class="text-xsmall">4:35</span>
+                </div>
+            </div>
+            <div class="volume-bar flex align-center">
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="timeline-large">
+                    <div class="timeline-small"></div>
+                    <div class="timeline-circle br-50"></div>
+                </div>
+            </div>
+        </section>
+        <!-- /Bottom Block -->
+    </main>
+    <!-- /Wrapper -->
 </body>
+
 </html>

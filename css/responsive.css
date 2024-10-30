@@ -1,0 +1,81 @@
+@media screen and (min-width: 425px) {
+
+  /* Side Bar */
+  :root {
+      --side-bar-width: 200px;
+  }
+
+  .side-bar {
+      padding: 10px 20px;
+  }
+
+  .logo {
+      display: inline-block;
+  }
+
+  .logo-icon {
+      display: none;
+  }
+
+  .nav-list span {
+      display: inline;
+  }
+
+  .playlist {
+      display: inline-block;
+  }
+
+  .home::before {
+      display: inline-block;
+  }
+
+  .bottom-nav .download,
+  .bottom-nav .profile {
+      justify-content: flex-start;
+  }
+
+  .bottom-nav span {
+      display: inline;
+  }
+
+  .bottom-nav img {
+      display: inline;
+  }
+
+  .profile img {
+      width: 25px;
+      height: 25px;
+  }
+
+  .bottom-nav hr {
+      display: block;
+  }
+
+  /* Bottom Block */
+  .icons i {
+      display: inline-block;
+  }
+
+  .icons .fa-heart {
+      padding-bottom: 0;
+      padding-right: 5px;
+  }
+}
+
+/* Responsive Tablet */
+@media screen and (min-width: 768px) {
+
+  /* Main Section */
+  :root {
+      --col-width: calc((100% - 30px) / 4)
+  }
+}
+
+/* Responsive Desktop */
+@media screen and (min-width: 1024px) {
+
+  /* Main Section */
+  :root {
+      --col-width: calc((100% - 50px) / 6)
+  }
+}

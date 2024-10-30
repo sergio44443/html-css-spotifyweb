@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CUSTOM PROPERTIES */
+/* Colors */
+:root {
+  --dark-gray: #8f8f8f;
+  --light-gray: #A3A3A3;
+  --upgrade-bar-bg: rgba(8, 11, 18, 0.665);
+  --content-section-bg: #141922;
+  --bottom-block-bg: #282828;
+  --green-details: #ADFF2F;
+}
+
+/* Dimensions */
+:root {
+  --side-bar-width: 50px;
+  --upgrade-bar-height: 60px;
+  --bottom-block-height: 70px;
+  --col-width: calc((100% - 10px) / 2)
+}
+
+/* UTILITIES */
+/* Padding */
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+/* Border Radius */
+.br-50 {
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* COMMON */
+/* Layout */
+.wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Typography */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-xsmall {
+  font-size: .5rem;
+  font-weight: 500;
+  justify-content: center;
+  padding-right: 50px;
+}
+
+.text-small {
+  font-size: .6rem;
+  font-weight: 600;
+}
+
+.text-regular {
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.text-big {
+  font-size: 1rem;
+}
+
+.text-gray {
+  color: var(--dark-gray);
+}
+
+/* MAIN */
+/* Top Block */
+.top-block {
+  height: calc(100% - var(--bottom-block-height));
+}
+
+/* Side Bar */
+.side-bar {
+  width: 400px;
+  padding: 10px 15px;
+  background-color: #000000;
+  color: #ffffff;
+  flex-direction: column;
+}
+
+.logo {
+  display: none;
+  width: 110px;
+}
+
+.nav-list span {
+  display: none;
+}
+
+.nav-list a {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.nav-list .icon {
+  width: 20px;
+}
+
+.playlist {
+  display: none;
+}
+
+.add-btn {
+  font-size: 1.8rem;
+  color: #000000;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  background-color: var(--light-gray);
+}
+
+.home {
+  position: relative;
+}
+
+.home::before {
+  content: "";
+  display: none;
+  background-color: var(--green-details);
+  width: 3px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: -44px;
+
+}
+
+/* Bottom Nav */
+.bottom-nav span {
+  display: none;
+}
+
+.download img {
+  width: 15px;
+}
+
+.profile img {
+  background-color: var(--dark-gray);
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.bottom-nav hr {
+  display: none;
+  border: .5px solid var(--dark-gray);
+}
+
+.bottom-nav .download,
+.bottom-nav .profile {
+  gap: 10px;
+  padding: 10px 0;
+}
+
+/* Main Section */
+.main-section {
+
+  color: #ffffff;
+  position: relative;
+}
+
+/* Upgrade Bar */
+.upgrade-bar {
+
+  padding: 0 15px;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.upgrade-btn {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  padding: .5rem 1.5rem;
+  border-radius: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* Content Section */
+.content-section {
+  height: 100%;
+  padding: 80px 20px 0 20px;
+  background-color: var(--content-section-bg);
+}
+
+.categories ul {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 20px;
+
+}
+
+.col {
+  width: var(--col-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: ;
+  gap: 5px;
+}
+
+.cover {
+  position: relative;
+}
+
+.cover img {
+  display: block;
+}
+
+.play-hover {
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  font-size: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover:hover .play-hover {
+  z-index: 1;
+}
+
+.popular-artists .play-hover {
+  border-radius: 50%;
+  height: 137px;
+}
+
+.created-for h2,
+.popular-artists h2 {
+  padding-bottom: 5px;
+}
+
+.selected {
+  position: relative;
+}
+
+.selected::after {
+  content: "";
+  background-color: var(--green-details);
+  height: 2.5px;
+  width: 25px;
+  position: absolute;
+  top: 15px;
+  left: 35%;
+
+}
+
+/* Bottom Block */
+.bottom-block {
+  height: var(--bottom-block-height);
+  background-color: var(--bottom-block-bg);
+  color: #ffffff;
+  padding: 20px 10px;
+}
+
+.song-playing {
+  gap: 10px;
+}
+
+.song-playing img {
+  height: 30px;
+}
+
+.icons i {
+  color: var(--light-gray);
+  display: block;
+}
+
+.icons .fa-heart {
+  padding-bottom: 5px;
+}
+
+.title {
+  padding-right: 10px;
+  line-height: .6;
+}
+
+.command-bar {
+  flex-direction: column;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.commands i,
+.song-playing i,
+.volume-bar i {
+  font-size: .7rem;
+}
+
+.commands i {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.commands .fa-circle-play {
+  font-size: 1.2rem;
+}
+
+.timeline {
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.timeline-large,
+.timeline-small {
+  height: 3px;
+}
+
+.timeline-large {
+  width: 90%;
+  background-color: darkgray;
+  position: relative;
+  cursor: pointer;
+}
+
+.timeline-small {
+  width: 30%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.timeline-circle {
+  display: none;
+  height: 10px;
+  width: 10px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 30%;
+  top: -90%;
+
+}
+
+.volume-bar {
+  gap: 10px;
+  width: 20%;
+}
+
+/* Hover States */
+.white-text-hover:hover span,
+.white-text-hover:hover a,
+.white-text-hover:hover {
+  color: #ffffff;
+}
+
+.add-btn-hover:hover .add-btn {
+  background-color: #ffffff;
+}
+
+.add-btn-hover:hover .text-btn {
+  color: #ffffff;
+}
+
+
+.title:hover span {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.timeline-large:hover .timeline-circle {
+  display: inline-block;
+}
+
+.timeline-large:hover .timeline-small {
+  background-color: greenyellow;
+}
+
+
