@@ -71,11 +71,3 @@
   }
 }
 
-/* Responsive Desktop */
-@media screen and (min-width: 1024px) {
-
-  /* Main Section */
-  :root {
-      --col-width: calc((100% - 50px) / 6)
-  }
-}
