@@ -1,13 +1,17 @@
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 699px) {
 
   /* Side Bar */
   :root {
-      --side-bar-width: 200px;
+      --side-bar-width: 120px;
   }
 
   .side-bar {
-      padding: 10px 20px;
-  }
+    width: 130px;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    flex-direction: column;
+}
 
   .logo {
       display: inline-block;
@@ -67,7 +71,51 @@
 
   /* Main Section */
   :root {
-      --col-width: calc((100% - 30px) / 4)
+    flex-wrap: wrap;
   }
 }
 
+
+@media (min-width:600px) {
+    .row {
+      flex-wrap: wrap;
+    }
+  
+    .col {
+        width: calc(100% / 2 - 10px);
+    }
+  }
+
+
+
+
+
+
+  @media (min-width:1100px) {
+    :root {
+        --side-bar-width: 350px;
+    }
+    
+    .row  {
+      flex-wrap: wrap;
+    }
+  
+    .col {
+      width: calc(100% / 6 - 10px);
+    }
+  
+
+  
+    .heart {
+      padding-top: 0px;
+      padding-left: 4px;
+    }
+  
+    .cover {
+      padding-top:7px;
+      padding-left: 4px;
+    }
+  }
+  
+ 
+  
